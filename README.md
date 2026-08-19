@@ -10,3 +10,7 @@ Schematic and PCB layout is as follows -
 # 3D Case design 
 Case designed on fusion for the pcb having 5 switches, one rotary encoder, an OLED display and the LED indicator with a USB-C port on the right side. 
 <img width="1920" height="782" alt="Tap Pad Case" src="Case/tap pad.png" />
+
+# Firmware
+The firmware is made via QMK. It assigns the function keys from F13 to F17 to the 5 switches and lets you control media and volume through the rotary encoder. 
+[Update Display](https://github.com/Yash-Takhtani/TapPad/blob/main/Update%20display.py) can be used to set text on the display.
