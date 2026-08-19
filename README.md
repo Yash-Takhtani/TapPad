@@ -7,7 +7,7 @@ Schematic and PCB layout is as follows -
 <img width="1920" height="782" alt="Schematic" src="PCB/Schematic.png" />
 <img width="1920" height="782" alt="PCB" src="PCB/tap pad.png" />
 
-# 3D Case design 
+# Case design 
 Case designed on fusion for the pcb having 5 switches, one rotary encoder, an OLED display and the LED indicator with a USB-C port on the right side. 
 <img width="1920" height="782" alt="Tap Pad Case" src="Case/tap pad.png" />
 
