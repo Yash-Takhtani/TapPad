@@ -14,3 +14,6 @@ Case designed on fusion for the pcb having 5 switches, one rotary encoder, an OL
 # Firmware
 The firmware is made via QMK. It assigns the function keys from F13 to F17 to the 5 switches and lets you control media and volume through the rotary encoder. 
 [Update Display](https://github.com/Yash-Takhtani/TapPad/blob/main/Update%20display.py) can be used to set text on the display.
+
+# Next Steps
+I will be building a custom GUI software through which you can easily assign macros and setup display or LED.
