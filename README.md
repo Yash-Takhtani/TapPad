@@ -32,7 +32,7 @@ To be purchased with the grant -
 - 3D printed case and rotary cap from Printing Legion
 
 Parts sourced myself -
-- 4x 3mm x 1.5mm magnets
+- 4x 3mm x 2mm magnets
 - 3x Short male pin headers (to match the compact spacing for OLED and Seeduino in case)
 
 # Next Steps
