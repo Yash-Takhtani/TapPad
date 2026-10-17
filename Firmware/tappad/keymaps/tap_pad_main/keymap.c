@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include QMK_KEYBOARD_H
 #include "raw_hid.h"
 #include <string.h>
@@ -47,54 +46,4 @@ void keyboard_post_init_user(void) {
     rgblight_enable_noeeprom();
     rgblight_sethsv_noeeprom(HSV_CYAN);
     #endif
-=======
-#include QMK_KEYBOARD_H
-#include "raw_hid.h"
-#include <string.h>
-
-const uint16_t PROGMEM keymaps[][1][6] = {
-    [0] = LAYOUT(
-                 KC_MPLY,
-        KC_F13, KC_F14, KC_F15, KC_F16, KC_F17
-    )
-};
-
-#if defined(ENCODER_ENABLE)
-bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (index == 0) {
-        if (clockwise) {
-            tap_code(KC_VOLU);
-        } else {
-            tap_code(KC_VOLD);
-        }
-    }
-    return false;
-}
-#endif
-
-static char oled_buffer[32] = "TapPad Ready";
-
-void raw_hid_receive_user(uint8_t *data, uint8_t length) {
-    memset(oled_buffer, 0, sizeof(oled_buffer));
-    strncpy(oled_buffer, (char *)data, sizeof(oled_buffer) - 1);
-}
-
-#if defined(OLED_ENABLE)
-oled_rotation_t oled_init_user(oled_rotation_t rotation) {
-    return OLED_ROTATION_180;
-}
-
-bool oled_task_user(void) {
-    oled_write_P(PSTR("== TAPPAD DECK ==\n"), false);
-    oled_write(oled_buffer, false);
-    return false;
-}
-#endif
-
-void keyboard_post_init_user(void) {
-    #if defined(RGBLIGHT_ENABLE)
-    rgblight_enable_noeeprom();
-    rgblight_sethsv_noeeprom(HSV_CYAN);
-    #endif
->>>>>>> 02528ac7faa7f056584542f4eb8c591275992812
 }
