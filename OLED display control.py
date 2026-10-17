@@ -8,5 +8,4 @@ def update_screen(text):
     payload += [0x00] * (33 - len(payload))
     dev.write(payload)
 
-inp = input("Enter text to Display here: ")
-update_screen(inp)
+update_screen("OBS: Recording")
