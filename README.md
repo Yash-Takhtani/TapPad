@@ -15,8 +15,18 @@ Triangular designs have been engraved along with a extruding "Tap Pad!" text to 
 <img width="1920" height="782" alt="Tap Pad Case" src="imgs/tap pad case.png" />
 
 # Firmware
-The firmware is made via QMK. It assigns the function keys from F13 to F17 to the 5 switches and lets you control media and volume through the rotary encoder. 
-[OLED Display Control](https://github.com/Yash-Takhtani/TapPad/blob/main/Update%20display.py) can be used to set text on the display.
+ - The firmware is made via QMK. It assigns the function keys from F13 to F20 to the 5 switches and rotary. 
+ - [OLED Display Control](https://github.com/Yash-Takhtani/TapPad/blob/main/tappad.py) can be used to control the rgb led.
+ - The actions on button presses can be configured through [TapPad keymap](https://github.com/Yash-Takhtani/TapPad/blob/main/TapPad keymap.py). In this example I control my Smart LED bulb, the rgb led on the board, my pc wallpaper and open some apps/websites with the keypresses.
+ - The buttons have been mapped to function keys as follows - 
+   - Key1 - F13
+   - Key2 - F14
+   - Key3 - F15
+   - Key4 - F16
+   - Key5 - F17
+   - Roatary- - F18
+   - Roatary+ - F19
+   - Roatary Button - F20
 
 # Bill of Materials
 Hackpad kit -
@@ -35,5 +45,12 @@ Parts sourced myself -
 - 4x 3mm x 2mm magnets
 - 3x Short male pin headers (to match the compact spacing for OLED and Seeduino in case)
 
+# Build
+**I completed the build!**
+
+<img width="400" alt="Tap Pad Case" src="imgs/built.jpg" />
+
+During the build I slightly misplaced the oled display due to which i had to modify the display cutout with my coldering iron. It kinda left burnt marks. I have added extra clearances to the CAD.
+
 # Next Steps
-After assembling the TapPad, I will be building a custom GUI software through which you can easily assign macros and setup display or LED, making it more purposeful.
+Configurable OLED python script
