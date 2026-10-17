@@ -27,6 +27,7 @@ Triangular designs have been engraved along with a extruding "Tap Pad!" text to 
    - Roatary- - F18
    - Roatary+ - F19
    - Roatary Button - F20
+**NOTE -** The python files require variable dependencies like the bulb api might bight be different for your bulb and the actions you want the buttons to make might be of your choice. In that case its recomended you edit 'TapPad keymap.py' file according to your needs and run it with python. Also the 'led.py' only allows you to control the RGB LED on the board with python.  
 
 # Bill of Materials
 Hackpad kit -
@@ -40,10 +41,6 @@ Hackpad kit -
 To be purchased with the grant - 
 - PCB (from external PCB manufacturer like JLCPCB)
 - 3D printed case and rotary cap from Printing Legion
-
-Parts sourced myself -
-- 4x 3mm x 2mm magnets
-- 3x Short male pin headers (to match the compact spacing for OLED and Seeduino in case)
 
 # Build
 **I completed the build!**
