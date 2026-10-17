@@ -1,0 +1,58 @@
+{
+    "manufacturer": "Yash",
+    "keyboard_name": "TapPad",
+    "maintainer": "Yash",
+    "bootloader": "rp2040",
+    "features": {
+        "bootmagic": true,
+        "extrakey": true,
+        "encoder": true,
+        "rgblight": true,
+        "oled": true
+    },
+    "matrix_pins": {
+        "direct": [
+            ["GP29", "GP3", "GP4", "GP2", "GP1", "GP0"]
+        ]
+    },
+    "encoder": {
+        "rotary": [
+            {"pin_a": "GP27", "pin_b": "GP28", "resolution": 4}
+        ]
+    },
+    "ws2812": {
+        "pin": "GP26",
+        "driver": "vendor"
+    },
+    "rgblight": {
+        "pin": "GP26",
+        "led_count": 1,
+        "animations": {
+            "all": true
+        }
+    },
+    "i2c": {
+        "driver": "vendor",
+        "sda_pin": "GP6",
+        "scl_pin": "GP7"
+    },
+    "processor": "RP2040",
+    "url": "https://github.com/Yash-Takhtani/TapPad",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x0001",
+        "vid": "0xFEED"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [
+                {"matrix": [0, 0], "x": 2, "y": 0},
+                {"matrix": [0, 1], "x": 0, "y": 1},
+                {"matrix": [0, 2], "x": 1, "y": 1},
+                {"matrix": [0, 3], "x": 2, "y": 1},
+                {"matrix": [0, 4], "x": 3, "y": 1},
+                {"matrix": [0, 5], "x": 4, "y": 1}
+            ]
+        }
+    }
+}
